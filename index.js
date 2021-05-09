@@ -235,3 +235,14 @@ tabs.forEach(clickedTab => {
 
     });
 });
+
+// ------------------------------------- change theme of app ---------------------------------- //
+
+var changeThemeButton = document.getElementById('change-theme-btn');
+var changeThemeToggle = document.getElementsByClassName('toggle-btn');
+
+changeThemeButton.addEventListener('click', function(){
+
+    document.body.classList.toggle('dark');
+    changeThemeToggle[0].classList.toggle('right');
+});

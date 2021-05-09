@@ -19,6 +19,10 @@ body {
   background-color: rgb(240,242,245);
 }
 
+.dark{
+  filter: invert(1);
+}
+
 *:focus {
   outline: none;
 }
@@ -49,6 +53,39 @@ body {
 #heading span{
   font-size: 12px;
   color: grey;
+}
+
+/*------------------------------change theme button -------------------------------*/
+
+#theme-container{
+  position: absolute;
+  top: 5.5%;
+  right: 10%;
+}
+
+#change-theme-btn{
+  position: relative;
+  height: 25px;
+  width: 60px;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn{
+  position: absolute;
+  background-color: rgb(3, 130, 168);
+  height: 90%;
+  width: 23px;
+  border-radius: 50%;
+  transition: all 2s ease-in-out;
+  cursor: pointer;
+}
+
+.right{
+  transition: all 2s ease-in-out;
+  right: 0;
 }
 
 #app {
