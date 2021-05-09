@@ -170,6 +170,36 @@ function createTask(){
 addTaskButton.addEventListener('click', createTask);
 document.addEventListener('onload', updateAllTasks());
 
+
+// ------------------------------------- hide background when task is created ------------------------------------------ //
+
+var taskBG = document.getElementById('task-bg');
+
+// ---------------------------- check every change in the dome in real time --------------------------------------- //
+
+const observer = new MutationObserver( list => {
+  const evt = new CustomEvent('dom-changed', {detail: list});
+  document.body.dispatchEvent(evt)
+});
+
+observer.observe(document.body, {attributes: true, childList: true, subtree: true});
+
+document.body.addEventListener('dom-changed', (event) => {
+
+
+    if(taskBox.childElementCount != 0 || CompletedtaskBox.childElementCount != 0) {
+
+        // console.log(taskBG)
+
+        taskBG.style.display = "none";
+    }
+    else{
+        taskBG.style.display = "block";
+    }
+});
+
+
+
 // ----------------------- Dynamic Tabs Faeture ------------------------ //
 
 var task_tab_pages = document.getElementsByClassName('task-tab');

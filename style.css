@@ -112,6 +112,29 @@ body {
 
 /* ------------ Lower Section CSS -----------------*/
 
+/*#task-pages{
+  background : url('task-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+*/
+
+#task-pages{
+  position: relative;
+}
+
+#task-pages #task-bg{
+  position: absolute;
+  height: 70%;
+  top: 12%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.15;
+}
+
 .task-tab{
   position: relative;
   min-height: 170px;
