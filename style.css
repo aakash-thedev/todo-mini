@@ -288,6 +288,89 @@ body {
 
 }
 
+@media screen and (max-width : 698px) {
+
+  body{
+    background-color: white;
+  }
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+  }
+
+}
+
+@media screen and (max-width : 685px) {
+
+  body{
+    background-color: white;
+  }
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 9%;
+    padding-right: 8%;
+    padding-top: 3%;
+  }
+
+}
+
+@media screen and (max-width : 509px) {
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4%;
+  }
+
+}
+
+@media screen and (max-width : 422px) {
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 11%;
+    padding-right: 8%;
+    padding-top: 6.3%;
+  }
+
+}
+
+@media screen and (max-width : 319px) {
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 10%;
+    padding-right: 8%;
+    padding-top: 7%;
+  }
+
+}
+
 /* -------------------- for super small screen ------------------- */
 
 @media screen and (max-width : 310px) {
@@ -316,6 +399,27 @@ body {
     height: 21px;
     width: 21px;
     margin-left: 2.18%;
+  }
+
+}
+
+@media screen and (max-width : 288px) {
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 22%;
+    padding-right: 8%;
+    padding-top: 8%;
+  }
+
+  #complete-all-task-check, #clear-completed-task{
+    color: grey;
+    font-size: 10px;
+    cursor: pointer;
   }
 
 }
