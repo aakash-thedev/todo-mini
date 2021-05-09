@@ -161,6 +161,10 @@ function createTask(){
     // taskCount++;
     updateAllTasks();
 
+    // first thing first
+    // clear the content area
+    content.value = "";
+
 }
 
 addTaskButton.addEventListener('click', createTask);

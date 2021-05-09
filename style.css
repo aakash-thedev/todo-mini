@@ -324,6 +324,10 @@ body {
     padding-top: 3%;
   }
 
+  .task-item{
+    font-size: medium;
+  }
+
 }
 
 @media screen and (max-width : 509px) {
