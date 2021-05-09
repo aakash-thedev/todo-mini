@@ -217,6 +217,7 @@ body {
 /* -------------------Media Queries for mobile view --------------- */
 
 @media screen and (max-width : 700px) {
+
   #app-container{
     margin-top: 0%;
     width: 95%;
@@ -238,6 +239,11 @@ body {
   }
 
   /* ----------task item box ------------ */
+  .task-tab{
+    position: relative;
+    min-height: 400px;
+  }
+
   .task-item {
     height: 47px;
   }
