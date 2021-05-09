@@ -241,7 +241,7 @@ body {
   /* ----------task item box ------------ */
   .task-tab{
     position: relative;
-    min-height: 400px;
+    min-height: 420px;
   }
 
   .task-item {
