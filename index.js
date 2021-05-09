@@ -67,6 +67,10 @@ function updateAllTasks(){
 
 function createTask(){
 
+    if(content.value.length  == 0){
+        return;
+    }
+
     var newTask = document.createElement('span');
     newTask.classList.add('task-item');
     // newTask.setAttribute('id', `task-id-${id}`);
