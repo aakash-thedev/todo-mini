@@ -28,24 +28,21 @@ body {
   height: auto;
   width: 600px;
   min-height: 300px;
-  margin: 10% auto;
+  margin: 8% auto;
   box-shadow: -1px 1px 3px 3px rgb(199, 199, 199);
   padding: 2%;
-  padding-top: 6%;
   padding-bottom: 1%;
   background-color: white;
   border-radius: 5px;
 }
 
 #heading{
-  position: absolute;
-  top: 1%;
-  left: 38%;
+  margin : -3% auto;
+  margin-bottom: 8%;
 }
 
 #heading div{
   font-size: 37px;
-  margin-left: 19%;
   color: grey;
 }
 
@@ -66,7 +63,7 @@ body {
 
 #upper-section {
   height: 100px;
-  widows: 95%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -215,4 +212,99 @@ body {
 .tab.active.teal {
   background-color: rgb(3, 130, 168);
   color: white;
+}
+
+/* -------------------Media Queries for mobile view --------------- */
+
+@media screen and (max-width : 700px) {
+  #app-container{
+    margin-top: 0%;
+    width: 95%;
+  }
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+  }
+  
+  #content {
+    padding-left: 12%;
+    padding-right: 8%;
+    padding-top: 6%;
+  }
+  
+  .fa-clipboard {
+    font-size: 25px;
+  }
+
+  /* ----------task item box ------------ */
+  .task-item {
+    height: 47px;
+  }
+  
+  .task-item .radio-btn {
+    height: 23px;
+    width: 23px;
+    margin-left: 2.1%;
+  }
+  
+  .remove-task{
+    height: 20px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 2%;
+  }
+  
+  .task-item:last-child{
+    margin-bottom: 2%;
+  }
+
+  /* ----------------- lower section media queries ------------ */
+  
+  #tabs {
+    position: absolute;
+    left: 0;
+    height: 35px;
+    top: 0;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+}
+
+/* -------------------- for super small screen ------------------- */
+
+@media screen and (max-width : 310px) {
+  #app-container{
+    width: 95%;
+  }
+
+  #upper-section {
+    height: 96px;
+    width: 98%;
+    margin-bottom: 3%;
+  }
+  
+  #content {
+    padding-left: 12%;
+    padding-right: 8%;
+    padding-top: 7.3%;
+  }
+
+  /* ----------task item box ------------ */
+  .task-item {
+    height: 45px;
+  }
+  
+  .task-item .radio-btn {
+    height: 21px;
+    width: 21px;
+    margin-left: 2.18%;
+  }
+
 }
