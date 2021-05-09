@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <main id="app-container">
+
+      <div id="heading">
+        <div>Atask</div>
+        <span>A todo management app</span>
+      </div>
+
+      <div id="app">
+        <div id="upper-section">
+          <textarea id="content" placeholder="Type Your Task"></textarea>
+          <span id="complete-all-task-check"> <i class="fas fa-check"></i> &nbsp; Complete All Tasks</span>
+          <span id="clear-completed-task"> <i class="fas fa-trash"></i> &nbsp; Clear Completed</span>
+          <i class="far fa-clipboard"></i>
+          <i class="fas fa-plus-circle" id="add-task"></i>
+        </div>
+
+        <div id="task-pages">
+
+          <section class="task-tab tab__active" id="all-task-items-box" data-tab="task-items-box">
+
+          </section>
+  
+          <section class="task-tab" id="completed-task-items-box" data-tab="completed-task">
+            
+          </section>
+
+        </div>
+
+        <div id="lower-section">
+  
+          <div id="tabs" class="tab-nav-container">
+            <div id="all-tasks" class="tab active teal" data-for-tab="task-items-box">All tasks ( <span id="task-left-count">0</span> )</div>
+            <div id="completed-tasks" class="tab teal" data-for-tab="completed-task">Completed ( <span id="task-completed-count">0</span> )</div>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

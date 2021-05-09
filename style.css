@@ -1,0 +1,218 @@
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 5;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: rgb(17, 156, 211);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: linear-gradient(#9fbff3, #c2e9fb); */
+  background-color: rgb(240,242,245);
+}
+
+*:focus {
+  outline: none;
+}
+
+#app-container {
+  position: relative;
+  height: auto;
+  width: 600px;
+  min-height: 300px;
+  margin: 10% auto;
+  box-shadow: -1px 1px 3px 3px rgb(199, 199, 199);
+  padding: 2%;
+  padding-top: 6%;
+  padding-bottom: 1%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#heading{
+  position: absolute;
+  top: 1%;
+  left: 38%;
+}
+
+#heading div{
+  font-size: 37px;
+  margin-left: 19%;
+  color: grey;
+}
+
+#heading span{
+  font-size: 12px;
+  color: grey;
+}
+
+#app {
+  height: auto;
+  min-height: 300px;
+  widows: 100%;
+  max-height: 700px;
+  position: relative;
+}
+
+/* ------------ Upper Section CSS ---------------- */
+
+#upper-section {
+  height: 100px;
+  widows: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid grey;
+}
+
+#content {
+  position: relative;
+  resize: none;
+  height: 60px;
+  width: 100%;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 4%;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 8px;
+  background-color: rgba(233, 233, 233, 0.479);
+}
+
+#complete-all-task-check, #clear-completed-task{
+  color: grey;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.fa-clipboard,
+.fa-plus-circle {
+  position: absolute;
+  color: rgb(3, 130, 168);
+}
+
+.fa-clipboard {
+  left: 2%;
+  top: 15%;
+  font-size: 30px;
+}
+
+.fa-plus-circle {
+  right: 2%;
+  top: 15%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ------------ Lower Section CSS -----------------*/
+
+.task-tab{
+  position: relative;
+  min-height: 170px;
+  max-height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 2%;
+  display: none;
+}
+
+.tab__active{
+  display: block;
+}
+
+.task-item {
+  height: 48px;
+  width: 100%;
+  border: 1px solid rgba(219, 218, 218, 0.479);
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 1.6%;
+  background-color: rgba(233, 233, 233, 0.479);
+  user-select: none;
+}
+
+.task-item .radio-btn {
+  height: 24px;
+  width: 24px;
+  margin-right: 2.3%;
+  margin-left: 2%;
+}
+
+.task-item .task-content {
+  font-size: 18px;
+  width: 86%;
+  overflow-wrap: break-word;
+}
+
+.remove-task{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(17, 156, 211);
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.task-item:last-child{
+  margin-bottom: 2%;
+}
+
+#completed-task-items-box .task-item{
+  text-decoration: line-through;
+  background-color: lightgrey;
+  color: grey;
+}
+
+#lower-section {
+  height: 30px;
+  position: relative;
+  bottom: 1%;
+  width: 100%;
+  border-top: 1px solid rgb(199, 199, 199);
+}
+
+#tabs {
+  position: absolute;
+  left: 0;
+  height: 40px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  bottom: -50%;
+}
+
+.tab {
+  cursor: pointer;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.4s linear;
+  color: rgb(93, 93, 93);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+
+.tab.active.teal {
+  background-color: rgb(3, 130, 168);
+  color: white;
+}
