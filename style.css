@@ -218,9 +218,14 @@ body {
 
 @media screen and (max-width : 700px) {
 
+  body{
+    background-color: white;
+  }
+
   #app-container{
-    margin-top: 0%;
+    margin-top: 5%;
     width: 95%;
+    box-shadow: none;
   }
 
   #upper-section {
@@ -241,7 +246,7 @@ body {
   /* ----------task item box ------------ */
   .task-tab{
     position: relative;
-    min-height: 420px;
+    min-height: 59vh;
   }
 
   .task-item {
