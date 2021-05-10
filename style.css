@@ -20,7 +20,9 @@ body {
 }
 
 .dark{
-  filter: invert(1);
+  filter: invert(0.95);
+  background-color: black;
+  color: white !important;
 }
 
 *:focus {
@@ -276,6 +278,14 @@ body {
 
 /* -------------------Media Queries for mobile view --------------- */
 
+@media screen and (max-width : 1200px) {
+
+  #tabs {
+    bottom: -20%;
+  }
+
+}
+
 @media screen and (max-width : 700px) {
 
   body{
@@ -287,6 +297,13 @@ body {
     width: 95%;
     box-shadow: none;
   }
+
+  #theme-container{
+    position: absolute;
+    top: 1%;
+    right: 4%;
+}
+
 
   #upper-section {
     height: 96px;
