@@ -244,5 +244,16 @@ var changeThemeToggle = document.getElementsByClassName('toggle-btn');
 changeThemeButton.addEventListener('click', function(){
 
     document.body.classList.toggle('dark');
+
+
+    document.getElementById('heading-title').classList.toggle('color-white');
+    document.getElementById('heading-desc').classList.toggle('color-white');
+    document.getElementById('content').classList.toggle('color-white');
+    document.getElementById('upper-section').classList.toggle('color-white');
+    document.getElementById('all-task-items-box').classList.toggle('color-white');
+    document.getElementById('completed-task-items-box').classList.toggle('color-white');
+    document.getElementById('complete-all-task-check').classList.toggle('color-white');
+    document.getElementById('clear-completed-task').classList.toggle('color-white');
+
     changeThemeToggle[0].classList.toggle('right');
 });

@@ -19,12 +19,6 @@ body {
   background-color: rgb(240,242,245);
 }
 
-.dark{
-  filter: invert(0.95);
-  background-color: black;
-  color: white !important;
-}
-
 *:focus {
   outline: none;
 }
@@ -503,4 +497,14 @@ body {
     cursor: pointer;
   }
 
+}
+
+.dark{
+  filter: invert(0.95);
+  background-color: black;
+  color: black !important;
+}
+
+.color-white{
+  color: black;
 }
